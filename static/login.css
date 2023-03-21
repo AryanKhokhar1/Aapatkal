@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(10, 9, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#closeimg{
+    border: none;
+    height: 30px;
+    float: right;
+    padding: 5px 20px 0 0;
+}
+main{
+    width: 30%;
+    height: 70%;
+    background-color: white;
+    text-align: center;
+}
+h3{
+    padding: 30px 0 40px 0;
+    color: blue;
+    font-size: larger;
+}
+#photo1, #photo2{
+    border: none;
+    border-radius: 5px;
+}
+#photo1{
+    margin-right: 20px;
+}
+.messagebox{
+    padding: 30px 0 40px 0;
+    font-size: large;
+    color: rgb(147, 134, 147);
+}
+#name{
+    font-family: sans-serif;
+    font-size: medium;
+    margin: 5px;
+    margin-bottom: 2px;
+}
+#password{
+    font-size: medium;
+    padding :1px;
+    margin: 5px;
+}
+#submit{
+    padding: 6px 15px 6px 15px;
+    color: white;
+    background-color: rgb(52, 52, 210);
+    border: 2px solid rgb(52, 52, 210);
+    border-radius: 4px;
+}
+.forgot a{
+    text-decoration: none;
+    color: rgb(52, 52, 210); 
+    font-size: medium;
+}
+.forgot{
+    padding: 7px 0 10px 300px ;
+}

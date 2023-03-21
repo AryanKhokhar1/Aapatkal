@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Aapatkal{% endblock title %}
+{% block addcss %}
+<link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock addcss %}
+{% block body %}
+
+    <div class="container">
+    </div>
+    <div class="intro" id="two">
+        <h3 class="intro-heading">Welcome to Aapatkal.in!</h3>
+        <p class="paragraph1">Aapatkal.in is one the leading application in the Health Care Industry to provide you with all the urgent details regarding medical emergencies in Rajasthan. The aim of this app is to unite the details of Healthcare in a Single-Tap. It provides you all the last minute information regarding any ill situation.
+            Search Bar helps you navigate the best results around your location with all the relevant updates about the availability of blood types, beds, oxygen meters and ambulance.
+            In recent times there are instances where it is difficult to find a hospital with all the necessary requirements for example there are specialized care units for sensitive illness but the patients are not able to find the correct medical help, the at this point this app gives the user a clear view and creates a pre-map to schedule your visit to the hospital with all the authenticated sources and correct details.
+            </p>
+    
+    </div>
+    <div class="cbody">
+        <div class="slide-container">
+            <span class="slide-content"  id="one">
+
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/static/img/sawan.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Sawai Man Sing Hospital</h2>
+                            <p class="description">Jawahar Lal Nehru Marg, Ashok Nagar, Jaipur, Rajasthan 302001</p>
+                            <button class="button"><a href="hospital/Sawai_Man_Singh_Hospital">Know Details</a></button>
+                        </div>
+                    </div>
+        
+                
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/static/img/AIIMS_Jodhpur.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">AIIMS Jodhpur</h2>
+                            <p class="description">Marudhar Industrial Area, 2nd Phase, M.I.A. 1st Phase, Basni, Basni, Jodhpur, Rajasthan 342005</p>
+                            <button class="button"><a href="hospital/AIIMS_Jodhpur">Know Details</a></button>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="image-content">
+                            {% comment %} <span class="overlay"></span> {% endcomment %}
+                            <div class="card-image">
+                                <img src="/static/img/Photo MBS Hospital.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Maharao Bhimsingh Hospital</h2>
+                            <p class="description">Kota Ajmer Road, Nayapura, Ladpura, Rajasthan 324001</p>
+                            <button class="button"><a href="hospital/Maharao_Bhimsingh_Hospital">Know Details</a></button>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        
+            <span class="slide-content" >
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/static/img/vedanta.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Vedanta Superspeciality Hospital</h2>
+                            <p class="description">PLOT NO, 360, Ajmer Rd, Satya Colony, Tagore Nagar, Jaipur, Rajasthan 3</p>
+                            <button class="button"><a href="hospital/Vedanta_Superspeciality_Hospital">Know Details</a></button>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/static/img/hari ram.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Hari Ram Hospital</h2>
+                            <p class="description">Bhiwadi Alwar Bypass Rd, Bhiwadi, Rajasthan 301019</p>
+                            <button class="button"><a href="hospital/Hari_Ram_Hospital">Know Details</a></button>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/static/img/park.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Park Kalash Hospital</h2>
+                            <p class="description">NH - 48, Prajapat Colony, Behror, Rajasthan 301701</p>
+                            <button class="button"><a href="hospital/Park_Kalash_Hospital">Know Details</a></button>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <!-- <span class="slide-content">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="image-content">
+                
+                            <div class="card-image">
+                                <img src="/static/img/g" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">G Singh Hospital</h2>
+                            <p class="description">The Lorem ipsumcessitatibus temporibus aut aliquid saepe, deleniti sapiente voluptatibus! Itaque, ipsam maiores.</p>
+                            <button class="button">Know Details</button>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/static/img/OIP.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">H Singh Hospital</h2>
+                            <p class="description">The Lorem ipsumcessitatibus temporibus aut aliquid saepe, deleniti sapiente voluptatibus! Itaque, ipsam maiores.</p>
+                            <button class="button">Know Details</button>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="image-content">
+                         
+                            <div class="card-image">
+                                <img src="/static/img/OIP.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">I Singh Hospital</h2>
+                            <p class="description">The Lorem ipsumcessitatibus temporibus aut aliquid saepe, deleniti sapiente voluptatibus! Itaque, ipsam maiores.</p>
+                            <button class="button">Know Details</button>
+                        </div>
+                    </div>
+                </div>
+            </span> -->
+    
+        </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)" style.color = red;>&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <br>
+    <div class="aboutbody">
+        <div class="about-us-content">
+            <div id="div1">
+                <h1 >Contact Us</h1><br>
+                <div >
+                    <p>Contact No.= +915588158828</p><br>
+                    <p>Adress:- Noida Institute of Engineering And Technology</p><br>
+                    <p>Knowledge Park Institutional Area Plot 19</p>
+                    <p>Gautam Buddha Nagar, Greater Noida</p>
+                </div>
+            </div>
+            <!-- <div id="div2">
+                <div id=container>
+                    Aapatkal.in
+                    <div id=flip>
+                        <div>
+                            <div>Easier</div>
+                        </div>
+                        <div>
+                            <div>Faster</div>
+                        </div>
+                        <div>
+                            <div>Finder</div>
+                        </div>
+                    </div>
+                    Makes it
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+{% endblock body %}
+{% block addjs %}
+    <script src="/static/index.js"></script>
+{% endblock addjs %}

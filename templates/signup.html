@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+SignUP
+{% endblock title %}
+{% block addcss %}
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+{% endblock addcss %}
+{% block body %}
+<div class="signupbody">
+    <div class="signupmain">
+    <button id="closeimg"><img  src="/static/img/close.png" alt="" style="height:30px;"></button>
+        <h3>Aapatkal Portal</h3>
+        <div class="photos">
+            <img src="/static/img/mainicon.png" alt="logo" height="125px">
+        </div>
+        <div class="messagebox">
+            <h4 id="message">Hii, Welcome to Aapatkal Portal</h4>
+        </div>
+        <div class="logindata">
+            <form action="/managesignup" method="post">
+                {% csrf_token %}
+                <label class="lab" for="staffname">Staff Name</label>
+                <input type="text" id="staffname" name="staffname" required><br>
+                <label class="lab" for="staffpost">Staff Post</label>
+                <input type="text" name="staffpost" id="staffpost" required><br>
+                <label class="lab" for="hospital">Hospital</label>
+                <input type="text" name="hospital" id="hospital" required><br>
+                <label class="lab" for="address">Address</label>
+                <input type="text" name="address" id="address" required><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required><br>
+                <button id="signup" type="submit">Sign Up</button>
+            </form>
+            <div class="alreadyacc"><a href="/Update">Already have a account.</a></div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+{% block addjs %}
+   <script src="/static/signup.js"></script>
+{% endblock addjs %}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding:0;
+    /* background-size: 100%; */
+    
+}
+.baseheader{
+    background-color:#24252A;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 30px 10px;
+}
+/* .html{
+    font-size: 62.5%;
+} */
+.list, .anc, .btn{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 520px;
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+}
+.logo{
+    width: 90px;
+    height: 80px;
+    cursor: pointer;
+    margin-right: 850px;
+    margin-top: -10px;
+    margin-left: -20px;
+    border-radius: 150px;
+    border: solid rgb(233, 234, 234);
+    margin-bottom: 500px;
+}
+
+.navbar{
+    list-style: none;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+.navbar li{
+    display: inline;
+    padding: 0px 6px;
+    margin-right: 40px;
+    margin-top: 7px;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+}
+.navbar li a:hover{
+    color: #008a90;
+}
+.btn button{
+    padding: 9px 25px;
+    background-color: rgb(0,136,169,1);
+    border:none;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 13px;
+    color: white;
+}
+.btn button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+.footer-body{
+    background-color: #24252A;
+    height: 220px;
+}
+footer .footericon ,footer.menu{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 10px;
+    transition: 0.5s;
+    flex-wrap: wrap;
+}
+footer .footericon{
+    list-style: none;
+    padding-top: 67px;
+}
+
+footer .footericon a{
+    font-size:2em;
+    margin:0 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+.footericon ul{
+    list-style: none;
+}
+footer .footermenu ul li{
+    text-align: center;
+    font-size:1.2em;
+
+    margin:0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.menu ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.menu ul li{
+    display: inline-block;
+    color: #fff;
+}
+.menu ul li a{
+    padding: 8px 5px 10px 5px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px)  {
+    .logo{
+        margin-left: 2px;
+        margin-right: auto;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        margin-top: 6px;
+    }
+    .navbar ul {
+        display: inline;
+    }
+    .navbar ul li{
+        margin-right: 5px;
+    }
+    .btn button{
+        margin-right: 6px;
+        width: 105px;
+        height: 43px;
+    }
+}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{detail.hospitalname}}{% endblock title %}
+{% block addcss %}
+    <link rel="stylesheet" href="{% static 'hospital.css' %}">
+{% endblock addcss %}
+{% block body %}
+    <div class="hospitalmain">
+      <div class="imageholder">
+        <img src={{imageurl}} alt="" height="500px" width="80%" />
+      </div>
+      <!-- {{detail}} -->
+      <div class="hospitalname">
+        <h1>{{detail.hospitalname}}</h1>
+      </div>
+      <div class="hospitaladdress">{{detail.hospitaladdress}}</div>
+      <div class="hospitalurl"><button><a target="_blank" href="{{detail.address_url}}">Direction</a></button></div>
+      <div class="alldetail">
+        <div class="hospitaldetail">
+          <h2>Available Material</h2>
+          <div class="blood">
+            <h4>Blood Packets<br /></h4>
+            <div class="blist">
+                <span class="btype">A+</span> <span class="value">{{detail.bloodgroup1}}</span> <span class="btype">A-</span> <span class="value">{{detail.bloodgroup2}}</span> <span class="btype">B+</span> <span class="value">{{detail.bloodgroup3}}</span><br />
+            </div>
+            <div class="blist">
+                <span class="btype">B-</span> <span class="value">{{detail.bloodgroup4}}</span> <span class="btype">AB+</span> <span class="value">{{detail.bloodgroup5}}</span> <span class="btype">AB-</span> <span class="value">{{detail.bloodgroup6}}</span><br />
+            </div>
+            <div class="blist">
+                <span class="btype">O+</span> <span class="value">{{detail.bloodgroup7}}</span> <span class="btype">O-</span> <span class="value">{{detail.bloodgroup8}}</span> <br />
+            </div>
+          </div>
+          <div class="bed">
+            <h4>Available Bed</h4>
+            <p class="bedtype">
+               Emergency Bed :  <span class="value">{{detail.ebed}}</span><br />
+            </p>
+            <p class="bedtype">
+                Normal Bed : <span class="value">{{detail.nbed}}</span><br />
+            </p>
+          </div>
+          <div class="ambulance">
+            <h4>Available Ambulance</h4>
+            Number of Ambulance : <span class="value">{{detail.ambulance}}</span><br />
+          </div>
+          <div class="oxygen">
+            <h4>Available Oxygen Cylinder</h4>
+           <p class="oxygendetail">
+               OxygenCylinder number : <span class="value">{{detail.oxygencylinder}}</span><br />
+           </p>
+           <p class="oxygendetail">
+               OxygenVolume : <span class="value">{{detail.oxygenvolume}}</span><br />
+           </p>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock body %}
+
