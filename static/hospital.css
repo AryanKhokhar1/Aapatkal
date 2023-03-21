@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hospitalmain{
+    text-align: center;
+    margin: 2px 0 240px 0;
+}
+.hospitalname{
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    /* color: rgb(56, 56, 221); */
+    color: rgb(0,136,169,1);
+}
+.hospitaladdress{
+    text-align: right;
+    margin: 0 20px 10px 0;
+    font-size: large;
+    /* color: rgb(56, 56, 221); */
+    color: rgb(0,136,169,1);
+}
+
+.hospitaldetail h2{
+    font-size: 3em;
+    margin: 30px 0 30px 0;
+    color: rgb(0,136,169,1);
+}
+.alldetail{
+    display: flex;
+    justify-content: center;
+}
+.hospitaldetail{
+    margin-top: 25px;
+    height: auto;
+    width: 65%;
+    background-color: rgb(208, 211, 218);
+    padding-bottom: 70px;
+    border: 2px none;
+    border-radius: 10px;
+}
+.blood h4, .bed h4, .ambulance h4, .oxygen h4{
+    margin-bottom: 20px;
+    color: rgb(0,136,169,1);
+    font-size: 21px;
+}
+/* .bed h4{
+    margin-bottom: 20px;
+} */
+.blood, .bed, .ambulance, .oxygen{
+    margin:7px 0 28px 0;
+    text-align: left;
+    margin: 25px;
+    font-size: 16px;
+    margin-left: 80px;
+    /* color: blue; */
+}
+.btype{
+    margin: 5px 5px 5px 5px;
+    border: 2px solid rgb(0,136,169,1);
+    border-radius: 4px;
+    background-color: rgb(0,136,169,1);
+    padding: 2px 10px 2px 10px;
+    color: white;
+    display: inline-block;
+    width: 30px;
+}
+.blist{
+    margin-bottom: 15px;
+}
+.bedtype{
+    margin: 3px 0 5px 0;
+}
+.oxygendetail{   
+    margin: 3px 0 5px 0;
+}
+.value{
+    color: rgb(56, 56, 221);
+    /* color: rgb(141, 209, 219); */
+}
+.hospitalurl{
+    height: auto;
+    width: auto; 
+    text-align: right;  
+    margin: 0 30px 20px 0;
+}
+.hospitalurl button{
+    padding: 4px;
+    background-color: rgb(0,136,169,1);
+    border-radius: 5px;
+    border: 2px solid rgb(0,136,169,1);
+}
+.hospitalurl button a{
+    text-decoration: none;
+    color: white;
+}
+.imageholder img{
+    width: 85%;
+}

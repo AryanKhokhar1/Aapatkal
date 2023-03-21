@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Update{% endblock title %}
+{% block addcss %}
+    <link rel="stylesheet" href="{% static 'updating.css' %}">
+{% endblock addcss %}
+{% block body %}
+<div class="upperbox">
+<div class="mainbox">
+    <h3>Available</h3>
+    <div class="updatebox">
+        <form action="/updatingdata" method="post">
+                {% csrf_token %}
+                <label id="lhospital" for="hospitalname">Hospital Name</label><br>
+                <input type="text" id="hospitalname" name="hospitalname" required><br>
+                <label id="lhospitaladdress" for="hospitaladdress">Hospital Address</label><br>
+                <input type="text" id="hospitaladdress" name="hospitaladdress"required><br>
+                <label id="lblood" for="bloodgrouppacket">Blood Group Packet Number</label><br>
+                <input type="number" id="bloodgroup1" name="bloodgroup1" placeholder="A+" >
+                <input type="number" id="bloodgroup2" name="bloodgroup2" placeholder="A-" >
+                <input type="number" id="bloodgroup3" name="bloodgroup3" placeholder="B+" ><br>
+                <input type="number" id="bloodgroup4" name="bloodgroup4" placeholder="B-" >
+                <input type="number" id="bloodgroup5" name="bloodgroup5" placeholder="AB+" >
+                <input type="number" id="bloodgroup6" name="bloodgroup6" placeholder="AB-"><br>
+                <input type="number" id="bloodgroup7" name="bloodgroup7" placeholder="O+">
+                <input type="number" id="bloodgroup8" name="bloodgroup8" placeholder="O-"><br>
+                <label id="lbed" for="bed">Bed Number</label><br>
+                <input type="number" id="ebed" name="ebed" placeholder="Emergency">
+                <input type="number" id="nbed" name="nbed" placeholder="Normal"><br>
+                <label id="lambulance" for="ambulance">Ambulance</label><br>
+                <input type="number" id="ambulance" name="ambulance" placeholder="Number"><br>
+                <label id="loxygen" for="oxygen">Oxygen Cylinder</label><br>
+                <input type="number" id="oxygencylinder" name="oxygencylinder" placeholder="Number">
+                <input type="number" id="oxygenvolume" name="oxygenvolume" placeholder="Volume/cylinder(L)"><br>
+                <label id="lstaffname" for="staffname">Staff Name</label><br>
+                <input type="text" id="staffname" name="staffname" required><br>
+                <label id="lstaffpost" for="staffpost">Staff Post</label><br>
+                <input type="text" name="staffpost" id="staffpost" required><br>
+                <label id="lpassword" for="password">Password</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <div class="submit">
+                    <button id="update" type="submit" >Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+{% block addjs %}
+<script src="/static/updating.js"></script>
+{% endblock addjs %}

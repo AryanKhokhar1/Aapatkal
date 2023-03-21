@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <main>
+        <button id="closeimg"><img  src="/static/img/close.png" alt="" style="height:30px;"></button>
+        <h3>Choose Account type</h3>
+        <div class="photos">
+            <button id="photo1"><img  src="/static/img/doctor.png" alt="" height="100px"></button>
+            <button id="photo2"><img  src="/static/img/examination.png" alt="" height="100px"></button>
+        </div>
+        <div class="messagebox">
+            <h4 id="message">Hii, Welcome to Aapatkal</h4>
+        </div>
+        <div class="logindata">
+            <form action="/managelogin" method="post">
+                {% csrf_token %}
+                <!-- <label for="Name">Name</label> -->
+                
+                <input type="text" id="name" name="name" placeholder="Email id" required><br>
+                <!-- <label for="password">Password</label> -->
+                <input type="password" id="password" name="password" placeholder="Password" required><br>
+                <button id="submit" type="submit">Login</button>
+            </form>
+                <div class="forgot">
+                   <a href="">forgot password ?</a> 
+                </div>
+        </div>
+    </main>
+    <script src="/static/login.js"></script>
+</body>
+</html>

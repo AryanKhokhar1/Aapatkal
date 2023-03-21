@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+    {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block addcss %}
+    {% endblock addcss %}
+    <a href=""><link rel="shortcut icon" href="/static/img/mainicon.png" type="image/x-icon"></a>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="baseheader">
+        <div class="logo">
+            <a href="/home">
+            <img class="logo" src="/static/img/Picsart_23-03-17_14-21-59-569.png" alt="logo"></a>
+        </div>
+    
+        <nav>
+            <ul class="navbar">
+                <li class="list"> <a class="anc" href="/home">Home</a></li>
+                <li class="list"><a class="anc" href="#one">Services</a></li>
+                <li class="list"><a class ="anc" href="#two">About Us</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="/Signup"><button>Sign up</button></a>
+    </div>
+
+    {% block body %}
+    {% endblock body %}
+
+    <div class="footer-body">
+        <footer>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <ul class="footericon">
+                <li ><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li ><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li ><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li ><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <div class="menu">
+                <ul>
+                    <li> <a href="/home">Home</a> </li>
+                    <li><a href="#one">Services</a> </li>
+                    <li><a href="#two">Team</a></li>
+                    <li><a href="#div1">Help</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>   
+    {% block addjs %}
+    {% endblock addjs %}
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(/static/img/Picsart_23-03-20_14-14-32-252.jpg);
+    background-size: cover;
+    /* background-color: white; */
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+
+.signupbody{
+    height: 100%;
+    /* background-color: rgb(10, 9, 9); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0 100px 0;
+}
+#closeimg{
+    border: none;
+    height: 30px;
+    float: right;
+    padding: 5px 20px 0 0;
+}
+.signupmain{
+    width: 40%;
+    height: auto;
+    background-color: rgb(208, 211, 218);
+    text-align: center;
+}
+.signupmain h3{
+    padding: 30px 0 40px 0;
+    color: rgb(0,136,169,1);
+    font-size: larger;
+}
+#photo1, #photo2{
+    border: none;
+    border-radius: 5px;
+}
+#photo1{
+    margin-right: 20px;
+}
+.messagebox{
+    padding: 30px 0 40px 0;
+    font-size: large;
+    color: rgb(147, 134, 147);
+}
+#name{
+    font-family: sans-serif;
+    font-size: medium;
+    margin: 5px;
+    margin-bottom: 2px;
+}
+.logindata{
+    color: rgb(0,136,169,1);
+}
+input#staffpost {
+    margin-left: 14px;
+}
+input#hospital{
+    margin-left: 21px;
+}
+input#address{
+    margin-left: 22px;
+}
+input#password{
+    margin-left: 11px;
+}
+#staffname , #staffpost , #hospital, #address , #password{
+    font-size: medium;
+    padding :2px;
+    margin: 5px;
+    border: 1px none;
+    border-radius: 2px;;
+}
+#signup{
+    padding: 6px 15px 6px 15px;
+    color: white;
+    background-color: rgb(0,136,169,1);
+    border: 2px solid rgb(0,136,169,1);
+    border-radius: 4px;
+    margin: 5px 0 10px 0;
+}
+.forgot a{
+    text-decoration: none;
+    color:rgb(0,136,169,1);
+    font-size: medium;
+}
+.forgot{
+    padding: 7px 0 10px 300px ;
+}
+.alreadyacc a{
+    text-decoration: none;
+    color:rgb(0,136,169,1);
+    float: right;
+    padding: 3px 20px 10px 0;
+}
+.photos img:hover{
+    transform: scale(1.1);
+}

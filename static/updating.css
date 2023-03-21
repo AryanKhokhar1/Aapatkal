@@ -1,0 +1,43 @@
+.baseheader{
+    height: 45px;
+}
+.upperbox{
+    display: flex;
+    justify-content: center;
+    color: rgb(0,136,169,1);
+}
+.mainbox{
+    margin: 30px 0 50px 0;
+    height: auto;
+    width: auto;
+    background-color: rgb(208, 211, 218);
+    border-radius: 10px solid rgb(75, 104, 160) ;
+    width: 60%;
+}
+.mainbox h3{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 0 20px 0;
+    color: rgb(0,136,169,1);
+}
+#hospitalname , #hospitaladdress, #bloodgroup1,#bloodgroup2,#bloodgroup3,#bloodgroup4,#bloodgroup5,#bloodgroup6,#bloodgroup7,#bloodgroup8, #ebed , #nbed, #ambulance, #oxygencylinder , #oxygenvolume , #staffname, #staffpost, #password{
+    padding: 3px;
+    margin: 4px 0 10px 100px;
+    border: 1px none;
+    border-radius: 2px;
+}
+#lhospital, #lhospitaladdress, #loxygen, #lbed, #lambulance, #lblood , #lstaffname , #lstaffpost , #lpassword{
+    margin-left: 100px;
+}
+#update{
+    text-align: center;
+    padding: 6px 15px 6px 15px;
+    color: white;
+    background-color: rgb(0,136,169,1);
+    border: 2px solid rgb(0,136,169,1);
+    border-radius: 4px;
+    margin: 10px 0 20px 0;
+}
+.submit{
+    text-align: center;
+}
