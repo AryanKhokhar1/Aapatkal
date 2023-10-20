@@ -1,4 +1,4 @@
-# Aapatkal_updated
+# Aapatkal
 Our website will collect data from the hospital’s staff and show it to the users ,which will tell them about the availability of blood groups, beds, oxygen cylinders and ambulances in each hospital around Rajasthan, for designing the website we have used HTML,CSS ,JS for frontend and django and sqlite3 for back end.
 lets get started by clicking on home from the navbar which contains links such as services, about us, sign up ;
 home: by clicking on home page we will be redirected to the home page of the website.
