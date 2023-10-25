@@ -2,23 +2,10 @@
 
 Aapatkal is a Dynamic site which helps hospital facility to track & manage their all medical facility and helps user to track hospital for specific need
 
-## Table of Contents
-
-  - [Aapatkal](#Aapatkal)
-  - [Table of Contents](#table-of-contents)
-  - [Description](#description)
-  - [Features](#features)
-  - [Installation](#installation)
-
-## Description
-
-# Project Name
-
-A brief description of your project.
 
 ## Table of Contents
 
-- [Project Name](#project-name)
+  - [Aapatkal](#aapatkal)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Technology Used](#technology-used)
